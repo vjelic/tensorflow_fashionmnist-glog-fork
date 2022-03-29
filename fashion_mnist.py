@@ -88,7 +88,7 @@ plot_image(i, predictions[i], test_labels, test_images)
 plt.subplot(1,2,2)
 plot_value_array(i, predictions[i],  test_labels)
 plt.show()
-plt.savefig("verify_prediction_1.img")
+plt.savefig("verify_prediction_1.jpg")
 
 i = 12
 plt.figure(figsize=(6,3))
@@ -97,7 +97,7 @@ plot_image(i, predictions[i], test_labels, test_images)
 plt.subplot(1,2,2)
 plot_value_array(i, predictions[i],  test_labels)
 plt.show()
-plt.savefig("verify_prediction_2.img")
+plt.savefig("verify_prediction_2.jpg")
 
 # Plot the first X test images, their predicted labels, and the true labels.
 # Color correct predictions in blue and incorrect predictions in red.
@@ -112,7 +112,7 @@ for i in range(num_images):
     plot_value_array(i, predictions[i], test_labels)
 plt.tight_layout()
 plt.show()
-plt.savefig("first_X_test_images.img")
+plt.savefig("first_X_test_images.jpg")
 # Grab an image from the test dataset.
 img = test_images[1]
 
